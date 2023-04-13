@@ -14,13 +14,36 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+<h1> Main screen </h1><br>
+
 ![Main screen](images/one.png)
-Main screen <br>
-![Chat Screen](images/two.png)
-Chat Screen <br>
-![Call screen](images/three.png)
-Call Screen <br>
-![Community_screen](images/four.png)
-Community screen <br>
-![Status screen](images/five.png)
-status screen <br>
+
+<h1> Chat screen </h1><br>
+
+![Chat Screen](images/two.png)<br>
+
+<h1> Call screen </h1><br>
+
+![Call screen](images/three.png)<br>
+
+<h1> Status screen </h1><br>
+
+![Status screen](images/five.png)<br>
+
+<h1> Community screen </h1><br>
+
+![Community_screen](images/four.png)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
