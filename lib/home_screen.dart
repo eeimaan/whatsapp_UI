@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/chat_screen.dart';
 
 class home_Screen extends StatefulWidget {
   home_Screen({Key? key}) : super(key: key);
@@ -76,56 +77,60 @@ class _home_ScreenState extends State<home_Screen> {
             ListView.builder(
                 itemCount: 17,
                 itemBuilder: (context, index) {
-                  if (index==0){
-                     return const Column(
-                      children: [                       
+                  if (index == 0) {
+                    return const Column(
+                      children: [
                         Padding(
                           padding: EdgeInsets.only(top: 10),
                           child: ListTile(
-                          leading: Icon(Icons.groups),
-                          
-                          title: Text('New Community'),
-                                          ),
+                            leading: Icon(Icons.groups),
+                            title: Text('New Community'),
+                          ),
                         ),
-                  SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                       ],
                     );
-                  
-                  }
-                  else if (index==1){
+                  } else if (index == 1) {
                     return const Column(
                       children: [
-                        
                         ListTile(
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://res.cloudinary.com/practicaldev/image/fetch/s--KCRN0Wuf--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/356/ceb8dc0f-a77b-4f89-84da-52216a4286e1.png'),
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://res.cloudinary.com/practicaldev/image/fetch/s--KCRN0Wuf--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/356/ceb8dc0f-a77b-4f89-84da-52216a4286e1.png'),
+                          ),
+                          title: Text('Dev Connect'),
                         ),
-                        title: Text('Dev Connect'),
-                                        ),
-                  Divider(),
+                        Divider(),
                       ],
                     );
-                  }
-                  else{
-                  return const ListTile(
-                    leading: CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          'https://logowik.com/content/uploads/images/flutter5786.jpg'),
-                    ),
-                    title: Text('Flutter Community'),
-                    subtitle: Text('You were added'),
-                    trailing: Text('5/02/2023'),
-                  );
-
+                  } else {
+                    return const ListTile(
+                      leading: CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            'https://logowik.com/content/uploads/images/flutter5786.jpg'),
+                      ),
+                      title: Text('Flutter Community'),
+                      subtitle: Text('You were added'),
+                      trailing: Text('5/02/2023'),
+                    );
                   }
                 }),
             //Text('Chats'),
             ListView.builder(
                 itemCount: 27,
                 itemBuilder: (context, index) {
-                  return const ListTile(
-                    leading: CircleAvatar(
+                  return ListTile(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => chat_screen(),
+                        ),
+                      );
+                    },
+                    leading: const CircleAvatar(
                       backgroundImage: NetworkImage(
                           'https://images.pexels.com/photos/4906334/pexels-photo-4906334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
                     ),
@@ -150,7 +155,6 @@ class _home_ScreenState extends State<home_Screen> {
                               border: Border.all(width: 1, color: Colors.white),
                             ),
                             child: const CircleAvatar(
-                              
                               backgroundImage: NetworkImage(
                                   "https://images.pexels.com/photos/1755385/pexels-photo-1755385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
                               child: Stack(children: [
