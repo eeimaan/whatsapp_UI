@@ -19,4 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 ![Call screen](images/three.png)
 ![Community_screen](images/four.png)
 ![Status screen](images/five.png)
-<img src="images/one.png" alt="alt text" width="500" height="300">
+<img src="images/one.png" alt="alt text" width="250" height="300">
