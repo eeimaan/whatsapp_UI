@@ -15,8 +15,12 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 ![Main screen](images/one.png)
+Main screen <br>
 ![Chat Screen](images/two.png)
+Chat Screen <br>
 ![Call screen](images/three.png)
+Call Screen <br>
 ![Community_screen](images/four.png)
+Community screen <br>
 ![Status screen](images/five.png)
-<img src="images/one.png" alt="alt text" width="350" height="600">
+status screen <br>
